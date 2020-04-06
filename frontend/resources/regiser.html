@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>user-register</title>
+    <!-- load the jquery from url-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- load the register.js from relative path-->
+    <script src="register.js" type="text/javascript" defer="defer"></script>
+    <style>
+    	body{
+    		background-color: black;
+    		text-align: center;
+    	}
+    	header{
+    		text-align: center;
+    	}
+    	h1{
+    		color:red;
+    	}
+    </style>
+</head>
+
+<body text="red">
+
+<h1>Register Page</h1>
+
+<form action="#">
+	Email: <br>
+	<input type="email" class="email" size="40">
+	<br>
+	Password: <br>
+	<input type="password" class="password" size="40">
+	<br><br>
+	Password Requirement: <br><br>
+	* At least 7 characters long <br>
+	* At most 16 characters long <br>
+	* Must contain at least 1 upper case alpha <br>
+	* Must contain at least 1 lower case alpha <br>
+	* Must contain at least 1 number <br>
+	* Must contain at least 1 special character <br>
+	<br>
+	<button type="submit" style="color:red; background-color:black">Register New User</button>
+</form>
+<br>
+<form>
+	<input type="button" value="Go Login" style="color:red; background-color:black" 
+	onclick="window.location.href='index.html'">
+</form>
+<br>
+<h2 class="registering"></h2>
+</body>
+
+</html>

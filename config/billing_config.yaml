@@ -1,0 +1,18 @@
+serviceConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 6979
+  path: /api/billing
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: billing.log
+
+databaseConfig:
+  dbUsername: cs122b_db71
+  dbPassword: Rw!vpn+ouhdt
+  dbHostname: adrian-monk-v10.ics.uci.edu
+  dbPort: 3306
+  dbDriver: com.mysql.cj.jdbc.Driver
+  dbName: cs122b_db71
+  dbSettings: ?autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PST

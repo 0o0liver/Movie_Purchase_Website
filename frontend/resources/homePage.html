@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>homepage</title>
+    <!-- load the jquery from url-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- load the register.js from relative path-->
+    <script src="homePage.js" type="text/javascript" defer="defer"></script>
+    <style>
+    	body{
+    		background-color: black;
+    		color:red;
+    		text-align: center;
+    	}
+        a{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <button style="color:red; background-color:black; float:right;" onclick="window.location.href='index.html'">Log Out</button>
+    <br><br>
+    <button style="color:red; background-color:black; float:right;" onclick="window.location.href='cart.html'">Cart</button>
+    <br><br>
+    <button style="color:red; background-color:black; float:right;" onclick="window.location.href='history.html'">Order History</button>
+    <h1>Basic Search</h1>
+    <button style="color:red; background-color:black" onclick="searchByTitle()">By Title</button>
+    <button style="color:red; background-color:black" onclick="searchByGenre()">By Genre</button>
+    <br><br>
+    <div id="basicSearch"></div>
+    <br><br>
+    <div id="movies"></div>
+    <br><br>
+    <button style="color:red; background-color:black" onclick="window.location.href='advanceSearch.html'">Go To Advanced Search</button>
+
+</body>
+</html>

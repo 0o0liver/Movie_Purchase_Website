@@ -1,0 +1,75 @@
+gatewayConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 6976
+  path: /api/g
+  requestDelay: 500
+  numThreads: 2
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: gateway.log
+
+databaseConfig:
+  dbConnections: 3
+  dbUsername: cs122b_db71
+  dbPassword: Rw!vpn+ouhdt
+  dbHostname: columbo-v5.ics.uci.edu
+  dbPort: 3306
+  dbDriver: com.mysql.cj.jdbc.Driver
+  dbName: cs122b_db71
+  dbSettings: ?autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PST
+
+idmConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 6977
+  path: /api/idm
+
+idmEndpoints:
+  EPUserRegister: /register
+  EPUserLogin: /login
+  EPSessionVerify: /session
+  EPUserPrivilegeVerify: /privilege
+
+moviesConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 6978
+  path: /api/movies
+
+moviesEndpoints:
+  EPMovieSearch: /search
+  EPMovieGet: /get/{movieid}
+  EPMovieAdd: /add
+  EPMovieDelete: /delete/{movieid}
+  EPGenreGet: /genre
+  EPGenreAdd: /genre/add
+  EPGenreMovie: /genre/{movieid}
+  EPStarSearch: /star/search
+  EPStarGet: /star/{id}
+  EPStarAdd: /star/add
+  EPStarIn: /star/starin
+  EPRating: /rating
+
+billingConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 6979
+  path: /api/billing
+
+billingEndpoints:
+  EPCartInsert: /cart/insert
+  EPCartUpdate: /cart/update
+  EPCartDelete: /cart/delete
+  EPCartRetrieve: /cart/retrieve
+  EPCartClear: /cart/clear
+  EPCcInsert: /creditcard/insert
+  EPCcUpdate: /creditcard/update
+  EPCcDelete: /creditcard/delete
+  EPCcRetrieve: /creditcard/retrieve
+  EPCustomerInsert: /customer/insert
+  EPCustomerUpdate: /customer/update
+  EPCustomerRetrieve: /customer/retrieve
+  EPOrderPlace: /order/place
+  EPOrderRetrieve: /order/retrieve

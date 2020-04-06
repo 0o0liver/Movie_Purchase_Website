@@ -1,0 +1,9 @@
+serviceConfig:
+  scheme: http://
+  hostName: andromeda-70.ics.uci.edu
+  port: 1076
+  path: /
+
+loggerConfig:
+  outputDir: ./logs/
+  outputFile: frontend.log
